@@ -73,8 +73,22 @@ export default function TabLayout() {
       <Tabs.Screen
         name="costs"
         options={{
-          title: 'Cost per Meal',
+          title: 'Cost per meal',
           tabBarIcon: ({ color }) => <Icon name="wallet" color={color} size={20}/>,
+          headerRight: () => (
+            <Link href="CostSuperVeggie" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <FontAwesome
+                    name="info-circle"
+                    size={28}
+                    color={Colors[colorScheme ?? 'light'].text}
+                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                  />
+                )}
+              </Pressable>
+            </Link>
+          ),
         }}
       />
     </Tabs>

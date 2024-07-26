@@ -55,6 +55,7 @@ function RootLayoutNav() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="Nutrients-Super-Veggie-V14" options={{ presentation: 'modal' }} />
         <Stack.Screen name="Nutrients-Nutty-Pudding-V4" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="CostSuperVeggie" options={{ presentation: 'modal' }} />
       </Stack>
     </ThemeProvider>
   );
